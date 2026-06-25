@@ -39,31 +39,13 @@ Key components include:
 ## 📸 Screenshots
 
 ### Login view
-![Login](login.png)
+<img src="images/login.png" width="400">
 
 ### Main view
-![Main](start-view.png)
+<img src="images/start-view.png" width="600">
 
 ### Employee form
-![Form](form.png)
-
-
-## 🚀 Future Improvements
-
-- Improve user interface and usability
-- Replace file-based storage with a database (e.g., SQL)
-- Enhance date handling (e.g., DatePicker support)
-- Extend user management features
-
-## 🎯 What I Learned
-
-During this project, I learned:
-
-- Combining UI and application logic
-- Input validation techniques
-- File handling and serialization
-- Structuring a software project
-- Debugging and problem-solving in practice
+<img src="images/form.png" width="400">
 
 ## 👤 Author
 
