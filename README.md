@@ -38,8 +38,6 @@ Key components include:
 
 ## 📸 Screenshots
 
-## 📸 Screenshots
-
 ### Login view
 ![Login](login.png)
 
