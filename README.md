@@ -41,13 +41,13 @@ Key components include:
 ## 📸 Screenshots
 
 ### Login view
-![Login](images/login.png)
+![Login](login.png)
 
 ### Main view
-![Main](images/start-view.png)
+![Main](start-view.png)
 
 ### Employee form
-![Form](images/form.png)
+![Form](form.png)
 
 
 ## 🚀 Future Improvements
