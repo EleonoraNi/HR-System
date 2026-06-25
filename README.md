@@ -39,13 +39,13 @@ Key components include:
 ## 📸 Screenshots
 
 ### Login view
-<img src="images/login.png" width="200">
+<img src="login.png" width="200">
 
 ### Main view
-<img src="images/start-view.png" width="300">
+<img src="start-view.png" width="300">
 
 ### Employee form
-<img src="images/form.png" width="200">
+<img src="form.png" width="200">
 
 ## 👤 Author
 
