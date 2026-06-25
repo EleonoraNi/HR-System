@@ -38,7 +38,16 @@ Key components include:
 
 ## 📸 Screenshots
 
-### Employee data input form
+## 📸 Screenshots
+
+### Login view
+![Login](images/login.png)
+
+### Main view
+![Main](images/start-view.png)
+
+### Employee form
+![Form](images/form.png)
 
 
 ## 🚀 Future Improvements
