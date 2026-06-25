@@ -1,0 +1,46 @@
+User:  - Sovellus käynnistetty - 27.12.2023 23.02.20
+User: 0000 - Käyttäjä kirjautunut - 27.12.2023 23.03.16
+User: 0000 - Henkilöä lisätään - 27.12.2023 23.03.28
+User: 0000 - Tiedot tallennettu: final_work.Employee - 27.12.2023 23.07.15
+User: 0000 - Henkilöä muokataan: Pena Niska - 27.12.2023 23.07.57
+User: 0000 - Tiedot tallennettu: final_work.Employee - 27.12.2023 23.08.04
+User: 0000 - Henkilön poisto peruutettu: Pena Niska - 27.12.2023 23.08.20
+User: 0000 - Henkilöä lisätään - 27.12.2023 23.08.24
+User: 0000 - Tiedot tallennettu: final_work.Employee - 27.12.2023 23.10.56
+User: 0000 - Henkilön poisto peruutettu: Jorma Nisu - 27.12.2023 23.11.31
+User: 0000 - Henkilöä lisätään - 27.12.2023 23.11.36
+User: 0000 - Poistuttu tallentamatta tietoja - 27.12.2023 23.11.39
+User: 0000 - Henkilö poistettu: Jorma Nisu - 27.12.2023 23.11.46
+User: 0000 - Henkilö poistettu: Pena Niska - 27.12.2023 23.11.52
+User: 0000 - Kirjauduttu ulos - 27.12.2023 23.12.01
+User:  - Sovellus käynnistetty - 29.12.2023 21.09.03
+User:  - Kirjautuminen epäonnistunut - 29.12.2023 21.09.09
+User: Kikka - Käyttäjä kirjautunut - 29.12.2023 21.09.18
+User: Kikka - Henkilöä lisätään - 29.12.2023 21.09.21
+User:  - Sovellus käynnistetty - 29.12.2023 21.33.40
+User: Kikka - Käyttäjä kirjautunut - 29.12.2023 21.33.49
+User: Kikka - Henkilöä lisätään - 29.12.2023 21.33.52
+User: Kikka - Tiedot tallennettu: final_work.Employee - 29.12.2023 21.35.04
+User: Kikka - Henkilöä muokataan: Malli Melli Esimerkki - 29.12.2023 21.36.51
+User: Kikka - Tiedot tallennettu: final_work.Employee - 29.12.2023 21.39.40
+User: Kikka - Henkilöä lisätään - 29.12.2023 21.39.48
+User: Kikka - Poistuttu tallentamatta tietoja - 29.12.2023 21.42.03
+User: Kikka - Henkilöä muokataan: Malli Melli Esimerkki - 29.12.2023 21.42.15
+User: Kikka - Tiedot tallennettu: final_work.Employee - 29.12.2023 21.42.26
+User: Kikka - Henkilöä lisätään - 29.12.2023 21.42.30
+User: Kikka - Tiedot tallennettu: final_work.Employee - 29.12.2023 21.43.57
+User: Kikka - Henkilön poisto peruutettu: Malli Melli Esimerkki - 29.12.2023 21.46.39
+User: Kikka - Henkilöä lisätään - 29.12.2023 21.46.43
+User: Kikka - Poistuttu tallentamatta tietoja - 29.12.2023 21.46.55
+User: Kikka - Henkilöä lisätään - 29.12.2023 21.46.58
+User:  - Sovellus käynnistetty - 9.8.2024 11.28.12
+User: kayttaja - Käyttäjä kirjautunut - 9.8.2024 11.29.13
+User: kayttaja - Henkilöä lisätään - 9.8.2024 11.29.23
+User: kayttaja - Tiedot tallennettu: Kirsi Tapinen Alkamispäivä 01.02.2024 Loppumispäivä 31.12.2024 - 9.8.2024 11.31.26
+User: kayttaja - Henkilöä muokataan: Malli Melli Esimerkki - 9.8.2024 11.31.45
+User: kayttaja - Tiedot tallennettu: Malli Melli Esimerkki Alkamispäivä 11.07.2023 Loppumispäivä  - 9.8.2024 11.31.55
+User: kayttaja - Henkilö poistettu: Kirsi Tapinen - 9.8.2024 11.32.09
+User: kayttaja - Henkilö poistettu: Malli Melli Esimerkki - 9.8.2024 11.32.35
+User: kayttaja - Henkilön poisto peruutettu: Malli Melli Esimerkki - 9.8.2024 11.32.44
+User: kayttaja - Henkilö poistettu: Malli Melli Esimerkki - 9.8.2024 11.32.54
+User: kayttaja - Kirjauduttu ulos - 9.8.2024 11.33.17

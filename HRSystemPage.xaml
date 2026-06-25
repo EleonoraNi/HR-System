@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="final_work.HRSystemPage"
+             Shell.BackgroundColor="RoyalBlue" BackgroundImageSource="maisema.jpg">
+
+    <!--Menubar where user can add, modify and delete information-->
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="Hallinnoi">
+            <MenuFlyoutItem Text="Lisää" Clicked= "OnAddClicked">
+            </MenuFlyoutItem>
+            <MenuFlyoutItem Text="Muokkaa" Clicked="OnModifyClicked">
+            </MenuFlyoutItem>
+            <MenuFlyoutItem Text="Poista" Clicked="OnDeleteClicked">
+            </MenuFlyoutItem>
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
+    <!--Labels for welcoming user and short instructions for the user-->
+    <StackLayout Padding="20">
+        <Label 
+            Text="Tervetuloa HR-Järjestelmään!"
+            HorizontalOptions="Center" FontSize="Header"/>
+        <Label 
+            Text="Alla näkyvät työntekijät ja työsuhteet."
+            HorizontalOptions="Center" TextColor="Blue" BackgroundColor="#30000000" WidthRequest="625"/>
+        <Label 
+            Text="Hallinnoi -valikosta voit lisätä uusia työntekijöitä, muokata tietoja tai poistaa tietoja."
+            HorizontalOptions="Center" TextColor="Blue" BackgroundColor="#30000000" WidthRequest="625"/>
+        <Label 
+            Text="Voit järjestää tietoja sukunimen, kutsumanimen ja nimikkeen mukaan painamallo ko. otsikkoa."
+            HorizontalOptions="Center" TextColor="Blue" BackgroundColor="#30000000" WidthRequest="625"/>
+        <!--Grid including Labes for headers and for defining features-->
+        <Grid Padding="5" Background="LightGray" ColumnSpacing="5" Margin="0,10,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.ColumnSpan="2" Text="Henkilötiedot" FontSize="Small" FontAttributes="Bold"/>
+            <Label Grid.Row="1" Text="Etunimet"/>
+            <Label Grid.Row="1" Grid.Column="1" 
+                   Text="Sukunimi" 
+                   ToolTipProperties.Text="Järjestä painamalla otsikkoa"
+                   FontAttributes="Italic">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+            <Label Grid.Row="1" Grid.Column="2" 
+                   Text="Kutsumanimi" 
+                   ToolTipProperties.Text="Järjestä painamalla otsikkoa"
+                   FontAttributes="Italic">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+            <Label Grid.Row="1" Grid.Column="3"  Text="Henkilötunnus"/>
+            <Label Grid.Column="4" Text="Kotiosoite" FontAttributes="Bold"/>
+            <Label Grid.Row="1" Grid.Column="4"  Text="Katuosoite"/>
+            <Label Grid.Row="1" Grid.Column="5"  Text="Postinumero"/>
+            <Label Grid.Row="1" Grid.Column="6" Text="Postitoimipaikka"/>
+            <Label Grid.ColumnSpan="2" Grid.Column="7" Text="Työsuhde" FontAttributes="Bold" FontSize="Small"/>
+            <Label Grid.Row="1" Grid.Column="7" Text="Alkamispäivä"/>
+            <Label Grid.Row="1" Grid.Column="8" Text="Päättymispäivä"/>
+            <Label Grid.Row="1" Grid.Column="9" 
+                   Text="Nimike" 
+                   ToolTipProperties.Text="Järjestä painamalla otsikkoa"
+                   FontAttributes="Italic">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+            <Label Grid.Row="1" Grid.Column="10" Text="Osasto"/>
+        </Grid>
+        <!--ListView to show information of employess and their employments -->
+        <ListView x:Name="EmploymentsLV"
+                  ItemsSource="{Binding employees}" 
+                  HorizontalOptions="FillAndExpand"
+                  VerticalOptions="FillAndExpand" 
+                  BackgroundColor="LightSteelBlue" SelectionMode="Single">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5" ColumnSpacing="5">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Text="{Binding FirstNames}"/>
+                            <Label Grid.Column="1" Text="{Binding LastName}"/>
+                            <Label Grid.Column="2" Text="{Binding NickName}"/>
+                            <Label Grid.Column="3" Text="{Binding SSN}"/>
+                            <Label Grid.Column="4" Text="{Binding StreetAddress}"/>
+                            <Label Grid.Column="5" Text="{Binding POCode}" />
+                            <Label Grid.Column="6" Text="{Binding PostOffice}"/>
+                            <Label Grid.Column="7" Text="{Binding StartDate}"/>
+                            <Label Grid.Column="8" Text="{Binding EndDate}"/>
+                            <Label Grid.Column="9" Text="{Binding Title}"/>
+                            <Label Grid.Column="10" Text="{Binding Department}"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

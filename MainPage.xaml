@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="final_work.MainPage" BackgroundImageSource="maisema.jpg" >
+    <!--Log in page which ask username and password-->
+    <Grid HorizontalOptions="Center" VerticalOptions="Center" RowSpacing="20" ColumnSpacing="10" Padding="10" BackgroundColor="WhiteSmoke">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="150"/>
+        </Grid.ColumnDefinitions>
+        <Label Text="Käyttäjänimi"/>
+        <Entry x:Name="userName" Grid.Column="1" BackgroundColor="LightSteelBlue"/>
+        <Label Text="Salasana" Grid.Row="1"/>
+        <Entry x:Name="password" Grid.Row="1" Grid.Column="1" BackgroundColor="LightSteelBlue" IsPassword="True"/>
+        <Button Text="Kirjaudu" Grid.Row="2" Grid.Column="1" BackgroundColor="RoyalBlue" BorderColor="Black" Clicked="OnLogInClicked"/>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="final_work.ManagementPage"
+             Title="Management" BackgroundImageSource="maisema.jpg" Padding="40">
+    <ScrollView>
+        <!--labels and entrys to add and modify each detail of Employee and employments and button to save all information-->
+        <Grid Padding="15" ColumnSpacing="10" RowSpacing="10" BackgroundColor="#99FFFFFF">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="250"/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Henkilötiedot" FontSize="Medium" FontAttributes="Bold"/>
+            <Label Grid.Row="1" Text="Etunimet"/>
+            <Label Grid.Row="2" Text="Sukunimi"/>
+            <Label Grid.Row="3" Text="Kutsumanimi"/>
+            <Label Grid.Row="4" Text="Henkilötunnus"/>
+            <Label Grid.Row="5" Text="Kotiosoite" FontAttributes="Bold"/>
+            <Label Grid.Row="6" Text="  Katuosoite"/>
+            <Label Grid.Row="7" Text="  Postinumero"/>
+            <Label Grid.Row="8" Text="  Postitoimipaikka"/>
+            <Label Grid.Row="9" Text="Työsuhde" FontAttributes="Bold" FontSize="Medium"/>
+            <Label Grid.Row="10" Text="Alkamispäivä"/>
+            <Label Grid.Row="11" Text="Päättymispäivä"/>
+            <Label Grid.Row="12" Text="Nimike"/>
+            <Label Grid.Row="13" Text="Osasto"/>
+            <Entry x:Name="entryFirstnames" Grid.Row="1" Grid.Column="1" BackgroundColor="LightSteelBlue" VerticalTextAlignment="Center" ClearButtonVisibility="WhileEditing"/>
+            <Entry x:Name="entryLastname" Grid.Row="2" Grid.Column="1" BackgroundColor="LightSteelBlue" ClearButtonVisibility="WhileEditing"/>
+            <Entry x:Name="entryNickName" Grid.Row="3" Grid.Column="1" BackgroundColor="LightSteelBlue" ClearButtonVisibility="WhileEditing"/>
+            <Entry x:Name="entrySSN" Grid.Row="4" Grid.Column="1" BackgroundColor="LightSteelBlue" MaxLength="11" ClearButtonVisibility="WhileEditing"/>
+            <Entry x:Name="entryStreetAddress" Grid.Row="6" Grid.Column="1" BackgroundColor="LightSteelBlue" ClearButtonVisibility="WhileEditing"/>
+            <Entry x:Name="entryPOCode" Grid.Row="7" Grid.Column="1" BackgroundColor="LightSteelBlue" MaxLength="5" ClearButtonVisibility="WhileEditing" TextChanged="EntryPostalCodeTextChanged"/>
+            <Entry x:Name="entryPostOffice" Grid.Row="8" Grid.Column="1" BackgroundColor="LightSteelBlue"  ClearButtonVisibility="WhileEditing"/>
+            <Entry x:Name="entryStartDate" Placeholder="pp.kk.vvvv" PlaceholderColor="Black" Grid.Row="10" Grid.Column="1" BackgroundColor="LightSteelBlue" ClearButtonVisibility="WhileEditing"/>
+            <Entry x:Name="entryEndDate" Placeholder="pp.kk.vvvv" PlaceholderColor="Black" Grid.Row="11" Grid.Column="1" BackgroundColor="LightSteelBlue" ClearButtonVisibility="WhileEditing"/>
+            <Entry x:Name="entryTitle" Grid.Row="12" Grid.Column="1" BackgroundColor="LightSteelBlue" ClearButtonVisibility="WhileEditing"/>
+            <Entry x:Name="entryDepartment" Grid.Row="13" Grid.Column="1" BackgroundColor="LightSteelBlue" ClearButtonVisibility="WhileEditing"/>
+            <Button Text="Tallenna" Grid.Row="14" Grid.Column="1" Clicked="OnSaveClicked"/>
+        </Grid>
+    </ScrollView>
+</ContentPage>
